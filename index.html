@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/bc7891fdae.js" crossorigin="anonymous" defer></script>
   <title>Find Resources</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -16,17 +17,29 @@
       <ul>
         <li>Brand</li>
         <div id="navRight">
-          <li>Signup</li>
-          <li>Login</li>
+          <li><a href="signup.html" id="signupText">Signup</a></li>
+          <li><a href="login.html" id="loginText">Login</a></li>
         </div>
       </ul>
     </nav>
+    <div id="form">
+      <form action="#" method="get">
+        <input type="search" name="searchBar" id="searchBar">
+        <label for="searchIcon" id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></label>
+      </form>
+    </div>
 
-    <form action="#" method="get">
-      <input type="search" name="searchBar" id="searchBar">
-      <label for="searchIcon"></label>
-    </form>
-
+    <section id="resourcesBox">
+      <div class="resource">
+        <div id="img">
+          <i class="fa-solid fa-image"></i>
+        </div>
+        <div id="text">
+          <h2>This is a resource</h2>
+          
+        </div>
+      </div>
+    </section>
     <script type="module">
       // Import the functions you need from the SDKs you need
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
