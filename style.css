@@ -22,23 +22,28 @@ ul {
     margin: 0;
     padding: 0;
 }
+ul li {
+    cursor: pointer;
+}
+ul li:hover {
+    color: #781bba;
+}
 #navRight {
     position: absolute;
     right: 0;
     display: flex;
-    justify-content: space-evenly;
-    width: 20%;
+    width: auto;
     height: 50%;
 }
 #navRight li {
     border: 1px solid #6d27c3;
     background-color: #6d27c3;
-    width: 40%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+    padding: 0 10px;
 }
 #signupText, #loginText {
     text-decoration: none;
@@ -104,4 +109,24 @@ form {
 #imgWrapper {
     width: 20%;
     height: 100%;
+}
+
+#loginDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#loginWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    text-align: center;
+}
+#loginWrapper h2 {
+    font-family: sans-serif;
+    font-size: 30px;
+}
+#loginWrapper button {
+    height: 40px;
+    margin-top: 25px;
 }
